@@ -8,10 +8,10 @@ import { RestrictedRoute } from "./RestrictedRoute";
 import { PrivateRoute } from "./PrivateRoute";
 import { Toaster } from "react-hot-toast";
 
-const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
-const ContactsPage = lazy(() => import("../pages/ContactsPage/ContactsPage"));
-const LoginPage = lazy(() => import("../pages/LoginPage/LoginPage"));
-const RegisterPage = lazy(() => import("../pages/RegisterPage/RegisterPage"));
+const HomePage = lazy(() => import("../pages/Home/Home"));
+const ContactsPage = lazy(() => import("../pages/Contacts/Contacts"));
+const LoginPage = lazy(() => import("../pages/Login/Login"));
+const RegisterPage = lazy(() => import("../pages/Registration/Registration"));
 
 export const App = () => {
   const isRefreshing = useSelector(selectIsRefreshing);
