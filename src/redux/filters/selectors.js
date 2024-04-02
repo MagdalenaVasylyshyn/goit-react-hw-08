@@ -4,7 +4,6 @@ export const selectFilter = state => state.filters.name;
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectFilter],
   (contacts, filter) => {
-    {
       return contacts.length > 0
         ? contacts.filter(
             (contact) =>
@@ -12,7 +11,6 @@ export const selectFilteredContacts = createSelector(
               contact.number.includes(filter)
           )
         : [];
-    }
   }
 );
 
