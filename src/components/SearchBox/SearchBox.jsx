@@ -7,7 +7,7 @@ export default function SearchBox() {
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
-    dispatch(filterContacts({ filter: e.target.value }));
+    dispatch(filterContacts(e.target.value));
   };
 
   return (
